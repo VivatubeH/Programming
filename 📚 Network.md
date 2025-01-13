@@ -4,7 +4,7 @@
   - 회사에서의 커뮤니케이션
 
 <details>
-<summary>❓네트워크의 개념은</summary>
+<summary>❓네트워크의 개념</summary>
 
 >"여러 개의 장치가 마치 그물처럼 서로 연결되어 정보를 주고받을 수 있는 통신망"
 >![image](https://github.com/user-attachments/assets/2d4e1e7c-c3e9-4fcc-a39e-9704abeb66c8)
