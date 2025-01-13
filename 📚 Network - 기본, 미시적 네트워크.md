@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/fbdd7779-59ac-4f30-bc63-9885a791909a)![image](https://github.com/user-attachments/assets/2e0a546a-5dba-461f-adf7-aa567ce89e7d)❓ 네트워크를 알아야 하는 이유 
+❓ 네트워크를 알아야 하는 이유 
   - AWS의 EC2 인스턴스 띄우기, 보안 그룹 설정, 리눅스 원격 접속, 웹 서버 설치 및 구축 등에 대한 이해
   - 웹 어플리케이션 개발 및 유지보수 기본 지식
   - 회사에서의 커뮤니케이션
