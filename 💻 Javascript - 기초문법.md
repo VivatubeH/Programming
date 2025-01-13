@@ -129,3 +129,10 @@ greeting.message = "say Hello instead"; // 속성 업데이트는 가능하다.
 ```
 
 </details>
+
+<details>
+<summary>❓자바스크립트의 자료형</summary>
+
+>"문자형(String), 숫자형(Number), 논리형(Boolean), 빈 데이터(Undefined)"
+
+</details>
