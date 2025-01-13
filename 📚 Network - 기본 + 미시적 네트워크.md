@@ -161,13 +161,6 @@
 </details>
 
 <details>
-<summary>❓패킷 교환 방식의 장단점</summary>
-
->""
-
-</details>
-
-<details>
 <summary>❓패킷 교환 방식의 장점</summary>
 
 >"회선 점유가 없어서 네트워크 이용 효율이 상대적으로 더 높다. "
