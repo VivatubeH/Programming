@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/32d48733-cece-4cb6-9fa8-e0c3ce4bc772)![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
 
 <h3>SQL Plus에 대해 궁금해지면 가볍게 읽어보기.</h3>
 
