@@ -449,4 +449,150 @@ INTO dml_err_test VALUES (2,'BBB')
 SELECT  * FROM dual ;
 
 commit ;
+
+CREATE TABLE t_novalidate
+( no number primary key ,
+  name varchar2(10) not null );
+
+INSERT INTO t_novalidate VALUES(1,'AAA');
+INSERT INTO t_novalidate VALUES(2,'BBB');
+INSERT INTO t_novalidate VALUES(3,'CCC');
+COMMIt ;
+
+CREATE TABLE t_validate
+ ( no number
+    CONSTRAINT tv_no_pk PRIMARY KEY ,
+   name  varchar2(10)
+    CONSTRAINT tv_name_nn NOT NULL) ;
+
+INSERT INTO t_validate VALUES (1,'AAA');
+INSERT INTO t_validate VALUES (2,'BBB');
+INSERT INTO t_validate VALUES (3,'CCC');
+COMMIT ;
+
+CREATE TABLE t_enable
+ ( no number
+    CONSTRAINT te_no_pk PRIMARY KEY ,
+   name varchar2(10)
+    CONSTRAINT te_name_nn NOT NULL) ;
+
+CREATE TABLE product
+( p_code  number(3) primary key,
+  p_name varchar2(20) not null ,
+  p_price  number) ;
+
+insert into product values (100,'Shrimp snack',800);
+insert into product values (101,'Patato snack',900);
+insert into product values (102,'Peanut snack',1000);
+insert into product values (103,'Sesame snack',900);
+insert into product values (104,'Onion snack',800);
+insert into product values (105,'Sweet potato snack',1500);
+commit;
+
+create table panmae
+( p_date varchar2(8) not null,
+  p_code number not null,
+  p_qty  number ,
+  p_total number ,
+  p_store varchar2(5) );
+
+
+insert into panmae values ('20110101',100,3,2400,'1000');
+insert into panmae values ('20110101',101,5,4500,'1001');
+insert into panmae values ('20110101',102,2,2000,'1003');
+insert into panmae values ('20110101',103,6,5400,'1004');
+insert into panmae values ('20110102',102,2,2000,'1000');
+insert into panmae values ('20110102',103,5,4500,'1002');
+insert into panmae values ('20110102',104,3,2400,'1002');
+insert into panmae values ('20110102',105,2,3000,'1000');
+insert into panmae values ('20110103',100,10,8000,'1004');
+insert into panmae values ('20110103',100,2,1600,'1000');
+insert into panmae values ('20110103',100,3,2400,'1001');
+insert into panmae values ('20110103',101,4,3600,'1003');
+insert into panmae values ('20110104',100,2,1600,'1002');
+insert into panmae values ('20110104',100,4,3200,'1003');
+insert into panmae values ('20110104',100,5,4000,'1004');
+insert into panmae values ('20110104',101,3,2700,'1001');
+insert into panmae values ('20110104',101,4,3600,'1002');
+insert into panmae values ('20110104',101,3,2700,'1003');
+insert into panmae values ('20110104',102,4,4000,'1001');
+insert into panmae values ('20110104',102,2,2000,'1002');
+insert into panmae values ('20110104',103,2,1800,'1003');
+
+
+commit;
+
+create table member
+(no number(4) not null ,
+ name varchar2(20) not null ,
+ jumin char(13) primary key ,
+ passwd varchar2(10) not null ,
+ id  varchar2(10) not null unique ,
+ an_key varchar2(10) ,
+ an_key_dap  varchar2(15) );
+
+
+insert into member
+ values (1001,'Nicholas Cage','7510231234567','a1234','simson','wife?','Jodie Foster') ;
+
+insert into member
+ values(1002,'Jodie Foster','7509222345678','b1234','bobby','husband?','Nicholas Cage') ;
+
+insert into member
+ values (1003,'Macaulay Culkin','1410234567890','c1234','daddy','father?','Nicholas Cage');
+
+insert into member
+ values (1004,'Nicole Kidman','1609223456789','d1234','mommy','Mather?','Jodie Foster') ;
+
+create table t_reg2
+(no number , 
+ ip varchar2(20));
+
+insert into t_reg2 values (1,'10.10.0.1') ;
+insert into t_reg2 values (2,'10.10.10.1') ;
+insert into t_reg2 values (3,'172.16.5.100') ;
+insert into t_reg2 values (4,'172.61.186.2') ;
+insert into t_reg2 values (5,'172.61.168.2') ;
+insert into t_reg2 values (6,'255.255.255.0') ;
+commit;
+
+create table fruit (name varchar2(10) , price number(5)) ;
+insert into fruit values ('apple' , 100) ;
+insert into fruit values ('grape' , 200) ;
+insert into fruit values ('orange' ,300) ;
+commit;
+
+create table loan
+( l_date varchar2(8) not null,
+  l_code number not null,
+  l_qty  number ,
+  l_total number ,
+  l_store varchar2(5) );
+
+
+insert into loan values ('20110101',100,3,2400,'1000');
+insert into loan values ('20110101',101,5,4500,'1001');
+insert into loan values ('20110101',102,2,2000,'1003');
+insert into loan values ('20110101',103,6,5400,'1004');
+insert into loan values ('20110102',102,2,2000,'1000');
+insert into loan values ('20110102',103,5,4500,'1002');
+insert into loan values ('20110102',104,3,2400,'1002');
+insert into loan values ('20110102',105,2,3000,'1000');
+insert into loan values ('20110103',100,10,8000,'1004');
+insert into loan values ('20110103',100,2,1600,'1000');
+insert into loan values ('20110103',100,3,2400,'1001');
+insert into loan values ('20110103',101,4,3600,'1003');
+insert into loan values ('20110104',100,2,1600,'1002');
+insert into loan values ('20110104',100,4,3200,'1003');
+insert into loan values ('20110104',100,5,4000,'1004');
+insert into loan values ('20110104',101,3,2700,'1001');
+insert into loan values ('20110104',101,4,3600,'1002');
+insert into loan values ('20110104',101,3,2700,'1003');
+insert into loan values ('20110104',102,4,4000,'1001');
+insert into loan values ('20110104',102,2,2000,'1002');
+insert into loan values ('20110104',103,2,1800,'1003');
+
+
+commit;
+
 ```
