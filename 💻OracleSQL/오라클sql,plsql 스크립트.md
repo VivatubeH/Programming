@@ -323,8 +323,8 @@ insert into customer values (20010015,'Angela Bassett','7712141254963',420000);
 insert into customer values (20010016,'Jessica Lange','7808192157498',598000);
 insert into customer values (20010017,'Winona Ryder','7801051776346',625000);
 insert into customer values (20010018,'Michelle Pfeiffer','7808091786954',670000);
-insert into custormer values (20010019,'Whoopi Goldberg','7803242114563',770000);
-insert into custormer values (20010020,'Emma Thompson','7802232116784',730000);
+insert into customer values (20010019,'Whoopi Goldberg','7803242114563',770000);
+insert into customer values (20010020,'Emma Thompson','7802232116784',730000);
 commit ;
 
 create table hakjum
